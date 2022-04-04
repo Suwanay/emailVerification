@@ -1,0 +1,12 @@
+table {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+label{
+  margin-right: 10px;
+}
+
+thead{
+  font-weight: bolder;
+}

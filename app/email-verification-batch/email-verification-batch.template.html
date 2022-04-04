@@ -1,0 +1,41 @@
+<div>
+    <label for="email">Email</label><input type="text" name="email" ng-model="$ctrl.email">
+    <input type="button" value="Add" ng-click="$ctrl.addEmail()">
+
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="list in $ctrl.emails">
+                <td>{{list.id}}</td>
+                <td>{{list.email_address}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <input type="button" value="Verify Emails" ng-click="$ctrl.validateEmail()">
+
+    <table>
+        <thead>
+            <tr>
+                <td>Account</td>
+                <td>Addres</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="list in $ctrl.dataValidate">
+                <td>{{list.account}}</td>
+                <td>{{list.address}}</td>
+                <td>{{list.status}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

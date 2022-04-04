@@ -1,0 +1,21 @@
+<div>
+    <label for="email">Email</label><input type="text" name="email" ng-model="$ctrl.email">
+    <input type="button" value="Verify Email" ng-click="$ctrl.validateEmail()">
+
+    <table>
+        <thead>
+            <tr>
+                <td>Account</td>
+                <td>Addres</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{$ctrl.dataValidate.account}}</td>
+                <td>{{$ctrl.dataValidate.address}}</td>
+                <td>{{$ctrl.dataValidate.status}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
